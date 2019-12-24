@@ -16,7 +16,6 @@
  */
 package net.openitvn.game;
 
-import net.openitvn.game.math.MD5;
 import java.io.IOException;
 
 /**
@@ -24,8 +23,8 @@ import java.io.IOException;
  * @author Thinh Pham
  */
 public class Leaderboard implements Runnable {
-    private static final int GAME_ID = 4;
-    private static final String URI_PREFIX = "http://m.openitvn.net/leaderboard/v2/";
+    private static final int GAME_ID = 3;
+    private static final String URI_PREFIX = "http://mrlordkaj.byethost13.com/leaderboard/v2/";
     private static final byte COMMAND_SUBMIT_SCORE = 1;
     private static final byte COMMAND_GET_RANK = 2;
     private static final byte COMMAND_VIEW_ALL = 3;
@@ -41,16 +40,14 @@ public class Leaderboard implements Runnable {
         caller = callback;
     }
     
-    public static void submitScore(int score, String username, String deviceId, ILeaderboardCaller caller)
-    {
+    public static void submitScore(int score, String username, String deviceId, ILeaderboardCaller caller) {
         Leaderboard.score = score;
         Leaderboard.username = username;
         Leaderboard.deviceId = deviceId;
         new Thread(new Leaderboard(COMMAND_SUBMIT_SCORE, caller)).start();
     }
     
-    public static void getRank(int score, String deviceId, ILeaderboardCaller caller)
-    {
+    public static void getRank(int score, String deviceId, ILeaderboardCaller caller) {
         Leaderboard.score = score;
         Leaderboard.deviceId = deviceId;
         new Thread(new Leaderboard(COMMAND_GET_RANK, caller)).start();
@@ -66,15 +63,17 @@ public class Leaderboard implements Runnable {
                 try {
                     Thread.sleep(3000);
 //#if SATSACRYPTO
-                    String hash = MD5.getHashString(GAME_ID+"."+deviceId+"."+score);
+//#                     String hash = MD5.getHashString(GAME_ID+"."+deviceId+"."+score);
 //#else
-//#                     String hash = MD5.getHash(GAME_ID+"."+deviceId+"."+score);
+                    String hash = MD5.getHash(GAME_ID+"."+deviceId+"."+score);
 //#endif
                     String uri = URI_PREFIX+"?act=submit&gameid="+GAME_ID+"&deviceid="+deviceId+"&score="+score+"&hash="+hash+"&name="+NetworkHelper.uriEncode(username);
                     StringBuffer result = NetworkHelper.getContentViaHttp(uri);
                     String resultCode = StringHelper.readLine(result);
-                    if(resultCode.equals("1")) caller.onSubmitSuccess();
-                    else caller.onSubmitFail();
+                    if (resultCode.equals("1"))
+                        caller.onSubmitSuccess();
+                    else
+                        caller.onSubmitFail();
                 } catch (IOException ex) {
                     caller.onSubmitFail();
                 } catch (InterruptedException ex) {
@@ -84,22 +83,23 @@ public class Leaderboard implements Runnable {
                 
             case COMMAND_GET_RANK:
                 try {
-                    if (score == 0)
-                    {
+                    if (score == 0) {
                         caller.onGetRankSuccess(-1);
                         return;
                     }
                     Thread.sleep(2500);
 //#if SATSACRYPTO
-                    String hash = MD5.getHashString(GAME_ID+"."+deviceId+"."+score);
+//#                     String hash = MD5.getHashString(GAME_ID+"."+deviceId+"."+score);
 //#else
-//#                     String hash = MD5.getHash(GAME_ID+"."+deviceId+"."+score);
+                    String hash = MD5.getHash(GAME_ID+"."+deviceId+"."+score);
 //#endif
                     String uri = URI_PREFIX+"?act=myrank&gameid="+GAME_ID+"&deviceid="+deviceId+"&score="+score+"&hash="+hash;
                     StringBuffer result = NetworkHelper.getContentViaHttp(uri);
                     String resultCode = StringHelper.readLine(result);
-                    if(resultCode.equals("1")) caller.onGetRankSuccess(Integer.parseInt(StringHelper.readLine(result)));
-                    else caller.onGetRankFail();
+                    if (resultCode.equals("1"))
+                        caller.onGetRankSuccess(Integer.parseInt(StringHelper.readLine(result)));
+                    else
+                        caller.onGetRankFail();
                 } catch (IOException ex) {
                     caller.onGetRankFail();
                 } catch (InterruptedException ex) {
@@ -113,8 +113,10 @@ public class Leaderboard implements Runnable {
                     String uri = URI_PREFIX+"?act=viewall&gameid="+GAME_ID;
                     StringBuffer result = NetworkHelper.getContentViaHttp(uri);
                     String resultCode = StringHelper.readLine(result);
-                    if(resultCode.equals("1")) caller.onViewAllSuccess(result);
-                    else caller.onViewAllFail();
+                    if (resultCode.equals("1"))
+                        caller.onViewAllSuccess(result);
+                    else
+                        caller.onViewAllFail();
                 } catch (IOException ex) {
                     caller.onViewAllFail();
                 } catch (InterruptedException ex) {

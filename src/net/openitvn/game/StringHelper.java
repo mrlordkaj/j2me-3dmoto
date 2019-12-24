@@ -22,7 +22,8 @@ import java.util.Vector;
  *
  * @author Thinh Pham
  */
-public class StringHelper {
+public abstract class StringHelper {
+    
     public static String[] split(String delimiter, String splitStr) {
         StringBuffer token = new StringBuffer();
         Vector tokens = new Vector();
@@ -31,18 +32,18 @@ public class StringHelper {
         for (int i = 0; i < chars.length; i++) {
             if (delimiter.indexOf(chars[i]) != -1) {
                 // we bumbed into a delimiter
-//                if (token.length() > 0) {
+                if (token.length() > 0) {
                     tokens.addElement(token.toString());
                     token.setLength(0);
-//                }
+                }
             } else {
                 token.append(chars[i]);
             }
         }
         // don't forget the "tail"...
-//        if (token.length() > 0) {
+        if (token.length() > 0) {
             tokens.addElement(token.toString());
-//        }
+        }
         // convert the vector into an array
         String[] splitArray = new String[tokens.size()];
         for (int i = 0; i < splitArray.length; i++) {
@@ -52,26 +53,27 @@ public class StringHelper {
     }
     
     public static String formatNumber(int number) {
-        StringBuffer buffer = new StringBuffer(Integer.toString(number));
-        int offset = buffer.length() - 3;
-        while(offset > 0) {
-            buffer.insert(offset, ",");
+        StringBuffer sb = new StringBuffer(Integer.toString(number));
+        int offset = sb.length() - 3;
+        while (offset > 0) {
+            sb.insert(offset, ",");
             offset -= 3;
         }
-        return buffer.toString();
+        return sb.toString();
     }
     
     public static String readLine(StringBuffer sb) {
         StringBuffer rs = new StringBuffer();
-        while(sb.length() > 0 && sb.charAt(0) != '\r') {
+        while (sb.length() > 0 && sb.charAt(0) != '\r') {
             rs.append(sb.charAt(0));
             sb.deleteCharAt(0);
         }
         try {
             sb.deleteCharAt(0);
-            if(sb.charAt(0) == '\n') sb.deleteCharAt(0);
-        } catch (StringIndexOutOfBoundsException ex) {
+            if (sb.charAt(0) == '\n')
+                sb.deleteCharAt(0);
         }
+        catch (StringIndexOutOfBoundsException ex) { }
         return rs.toString();
     }
 }

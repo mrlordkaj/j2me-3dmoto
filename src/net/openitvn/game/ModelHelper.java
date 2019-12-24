@@ -31,71 +31,85 @@ import javax.microedition.m3g.World;
  *
  * @author Thinh Pham
  */
-public class ModelHelper {
+public abstract class ModelHelper {
+    
+    /**
+     * Loads m3g model world by provided file name without extension (.mod).
+     */
     public static World loadWorld(String fileName) {
-        fileName += ".msh";
+        fileName += ".mod";
         try {
             Object3D[] allNodes = Loader.load(fileName);
-            for(int i = 0; i < allNodes.length; i++) {
-                if(allNodes[i] instanceof World) {
-                    return (World)allNodes[i];
-                }
+            for (int i = 0; i < allNodes.length; i++) {
+                if (allNodes[i] instanceof World)
+                    return (World) allNodes[i];
             }
-        } catch (IOException ex) {
+        }
+        catch (IOException ex) {
+            throw new RuntimeException("Missing file: " + fileName + " (" + ex.getMessage() + ")");
         }
         return null;
     }
     
-    public static Node extractNode(int id, World mWorld) {
-        if(id >= mWorld.getChildCount()) {
-            throw new RuntimeException("Node ID is invalid");
+    /**
+     * Clones a children node from provided world.
+     */
+    public static Node extractNode(int index, World world) {
+        if (index >= 0 && index < world.getChildCount()) {
+            Node node = world.getChild(index);
+            node.setTranslation(0, 0, 0);
+            return (Node) node.duplicate();
         }
-        
-        Node node = mWorld.getChild(id);
-        node.setTranslation(0, 0, 0);
-        return (Node)node.duplicate();
+        throw new IndexOutOfBoundsException("Node index is invalid");
     }
     
+    /**
+     * Loads m3g texture package by provided file name without extension (.tex).
+     */
     public static Vector loadTexturePack(String fileName) {
-        Vector items = new Vector();
         fileName += ".tex";
         try {
             Object3D[] allNodes = Loader.load(fileName);
-            for(int i = 0; i < allNodes.length; i++) {
-                if(allNodes[i] instanceof Texture2D) {
-                    items.addElement(allNodes[i]);
-                }
+            Vector rs = new Vector();
+            for (int i = 0; i < allNodes.length; i++) {
+                if (allNodes[i] instanceof Texture2D)
+                    rs.addElement(allNodes[i]);
             }
-            return items;
+            return rs;
         } catch (IOException ex) {
             throw new RuntimeException("Missing file: " + fileName + " (" + ex.getMessage() + ")");
         }
     }
     
-    public static Texture2D extractTexture(int id, Vector texturePack) {
-        return (Texture2D)texturePack.elementAt(id);
+    /**
+     * Gets a children texture from texture package.
+     */
+    public static Texture2D extractTexture(int index, Vector texturePack) {
+        return (Texture2D) texturePack.elementAt(index);
     }
     
-    public static Texture2D loadOpaqueTexture(String texturePath) {
-        Image2D image = new Image2D(Image2D.RGB, ImageHelper.loadImage(texturePath));
-        Texture2D texture = new Texture2D(image);
-        return texture;
+    /**
+     * Creates texture from an opaque image file.
+     */
+    public static Texture2D loadOpaqueTexture(String imagePath) {
+        Image2D img = new Image2D(Image2D.RGB, ImageHelper.loadImage(imagePath));
+        return new Texture2D(img);
     }
     
-    public static Texture2D loadTransparentTexture(String texturePath) {
-        Image2D image = new Image2D(Image2D.RGBA, ImageHelper.loadImage(texturePath));
-        Texture2D texture = new Texture2D(image);
-        return texture;
+    /**
+     * Creates texture from a transparent image file.
+     */
+    public static Texture2D loadTransparentTexture(String imagePath) {
+        Image2D img = new Image2D(Image2D.RGBA, ImageHelper.loadImage(imagePath));
+        return new Texture2D(img);
     }
     
+    /**
+     * Applies a texture to a mesh.
+     */
     public static void applyTexture(Texture2D texture, Mesh mesh) {
-        Appearance appearance = (Appearance)mesh.getAppearance(0).duplicate();
-        appearance.setTexture(0, texture);
-        mesh.setAppearance(0, appearance);
-    }
-    
-    public static void applyTexture(String texturePath, Mesh mesh) {
-        Texture2D texture = loadOpaqueTexture(texturePath);
-        applyTexture(texture, mesh);
+        Appearance appr = (Appearance) mesh.getAppearance(0).duplicate();
+        appr.setTexture(0, texture);
+        mesh.setAppearance(0, appr);
     }
 }

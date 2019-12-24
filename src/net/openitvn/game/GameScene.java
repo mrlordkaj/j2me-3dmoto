@@ -16,7 +16,6 @@
  */
 package net.openitvn.game;
 
-import com.nokia.mid.ui.DeviceControl;
 import javax.microedition.lcdui.Display;
 import javax.microedition.lcdui.game.GameCanvas;
 import javax.microedition.midlet.MIDlet;
@@ -26,62 +25,16 @@ import javax.microedition.midlet.MIDlet;
  * @author Thinh Pham
  */
 public abstract class GameScene extends GameCanvas implements Runnable {
-//#if QWERTY
-//#     public static final int KEY_0 = 32;
-//#     public static final int KEY_1 = 114;
-//#     public static final int KEY_2 = 116;
-//#     public static final int KEY_3 = 121;
-//#     public static final int KEY_4 = 102;
-//#     public static final int KEY_5 = 103;
-//#     public static final int KEY_6 = 104;
-//#     public static final int KEY_8 = 98;
-//#     public static final int KEY_LF = 113;
-//#     public static final int KEY_CF = 119;
-//#     public static final int KEY_RF = 101;
-//#     public static final int KEY_SHARP = 106;
-//#     public static final int KEY_BACK = 8;
-//#elif TKEY
-//#     public static final int KEY_0 = 48;
-//#     public static final int KEY_1 = 49;
-//#     public static final int KEY_2 = 50;
-//#     public static final int KEY_3 = 51;
-//#     public static final int KEY_4 = 52;
-//#     public static final int KEY_5 = 53;
-//#     public static final int KEY_6 = 54;
-//#     public static final int KEY_7 = 55;
-//#     public static final int KEY_8 = 56;
-//#     public static final int KEY_9 = 57;
-//#     public static final int KEY_LF = -6;
-//#     public static final int KEY_CF = -5;
-//#     public static final int KEY_RF = -7;
-//#     public static final int KEY_SHARP = 35;
-//#     public static final int KEY_UP = -1;
-//#     public static final int KEY_RIGHT = -4;
-//#     public static final int KEY_DOWN = -2;
-//#     public static final int KEY_LEFT = -3;
-//#endif
-    
     public static final byte STATE_LOAD = 0;
     
     protected byte state = STATE_LOAD;
-    public byte getState() { return state; }
-    
-    private short clearMemoryTicker;
+//    private short clearMemoryTicker;
     private boolean isRunning = true;
-    
     private short updateInterval;
     private byte fps;
-    public void setFPS(int targetFPS) {
-        fps = (byte)targetFPS;
-        updateInterval = (short)(1000/fps);
-    }
-    public byte getFPS() { return fps; };
     
     protected static GameScene instance;
     public static GameScene getAbstractInstance() { return instance; }
-    
-    private static int backlightLevel = 0;
-    public static void setBacklightLevel(int value) { backlightLevel = value; }
     
     public GameScene(MIDlet midlet, int targetFPS) {
         super(false);
@@ -99,7 +52,7 @@ public abstract class GameScene extends GameCanvas implements Runnable {
     }
     
     public void run() {
-        while(isRunning) {
+        while (isRunning) {
             try {
                 update();
                 repaint();
@@ -108,11 +61,10 @@ public abstract class GameScene extends GameCanvas implements Runnable {
             try {
                 Thread.sleep(updateInterval);
             } catch (InterruptedException ex) { }
-            if(--clearMemoryTicker < 0) {
-                System.gc();
-                if(backlightLevel > 0) DeviceControl.setLights(0, backlightLevel);
-                clearMemoryTicker = (short)(fps*10);
-            }
+//            if (--clearMemoryTicker < 0) {
+//                System.gc();
+//                clearMemoryTicker = (short)(fps*10);
+//            }
         }
     }
     
@@ -123,5 +75,18 @@ public abstract class GameScene extends GameCanvas implements Runnable {
         isRunning = false;
         instance = null;
         System.gc();
+    }
+    
+    public byte getState() {
+        return state;
+    }
+    
+    public void setFPS(int targetFPS) {
+        fps = (byte)targetFPS;
+        updateInterval = (short)(1000/fps);
+    }
+    
+    public final byte getFPS() {
+        return fps;
     }
 }

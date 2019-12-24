@@ -21,18 +21,18 @@ package net.openitvn.game;
  * @author Thinh Pham
  */
 public interface ILeaderboardCaller {
-    public void onSubmitSuccess();
-    public void onSubmitFail();
+    void onSubmitSuccess();
+    void onSubmitFail();
 
-    public void onGetRankSuccess(int rank);
-    public void onGetRankFail();
+    void onGetRankSuccess(int rank);
+    void onGetRankFail();
 
-    public void onView7Success(StringBuffer reader);
-    public void onView7Fail();
+    void onView7Success(StringBuffer reader);
+    void onView7Fail();
 
-    public void onViewAllSuccess(StringBuffer reader);
-    public void onViewAllFail();
+    void onViewAllSuccess(StringBuffer reader);
+    void onViewAllFail();
 
-    public void onRemoveSuccess();
-    public void onRemoveFail();
+    void onRemoveSuccess();
+    void onRemoveFail();
 }

@@ -33,60 +33,53 @@ public class SoundManager {
     
     private static SoundManager instance;
     public static SoundManager getInstance() {
-        if(instance == null) instance = new SoundManager();
+        if (instance == null)
+            instance = new SoundManager();
         return instance;
     }
     
     private Player player;
     private String currentFile = "";
     private String currentType = "";
-    
     private boolean enabled = true;
-    public void setEnabled(boolean value) {
-        enabled = value;
-        if(enabled) startMusic();
-        else stopMusic();
-    }
-    public boolean isEnabled() { return enabled; }
     
     public void sound(String fileName, String audioType) {
-        if(enabled) {
+        if (enabled) {
             try {
-                InputStream inputStream = SoundManager.class.getResourceAsStream(fileName);
-                player = Manager.createPlayer(inputStream, audioType);
+                InputStream is = SoundManager.class.getResourceAsStream(fileName);
+                player = Manager.createPlayer(is, audioType);
                 player.realize();
                 player.prefetch();
                 ((VolumeControl)player.getControl("VolumeControl")).setLevel(30);
                 player.start();
                 ((VolumeControl)player.getControl("VolumeControl")).setLevel(30);
-                inputStream.close();
-            } catch (IOException ex) {
-            } catch (MediaException ex) {
+                is.close();
             }
+            catch (IOException ex) { }
+            catch (MediaException ex) { }
         }
     }
     
     public void playMusic(String fileName, String audioType) {
-        if(currentFile.equals(fileName)) return;
-        
+        if (currentFile.equals(fileName)) return;
         currentFile = fileName;
         currentType = audioType;
-        if(enabled) startMusic();
+        if (enabled) startMusic();
     }
     
     private void startMusic() {
         stopMusic();
-        if(!currentFile.equals("")) {
+        if (!currentFile.equals("")) {
             try {
-                InputStream inputStream = SoundManager.class.getResourceAsStream(currentFile);
-                player = Manager.createPlayer(inputStream, currentType);
+                InputStream is = SoundManager.class.getResourceAsStream(currentFile);
+                player = Manager.createPlayer(is, currentType);
                 player.realize();
                 player.prefetch();
                 player.setLoopCount(-1);
                 ((VolumeControl)player.getControl("VolumeControl")).setLevel(30);
                 player.start();
                 ((VolumeControl)player.getControl("VolumeControl")).setLevel(30);
-                inputStream.close();
+                is.close();
             } catch (IOException ex) {
                 currentFile = "";
                 currentType = "";
@@ -106,5 +99,15 @@ public class SoundManager {
                 player = null;
             } catch (MediaException ex) { }
         }
+    }
+    
+    public void setEnabled(boolean value) {
+        enabled = value;
+        if (enabled) startMusic();
+        else stopMusic();
+    }
+    
+    public boolean isEnabled() {
+        return enabled;
     }
 }

@@ -22,31 +22,32 @@ import java.util.Random;
  *
  * @author Thinh Pham
  */
-public class RandomHelper {
-    public static Random rand = new Random();
+public abstract class RandomHelper {
+    
+    public static final Random RAND = new Random();
     
     public static byte randByte(int min, int max) {
-        if(max > 127) max = 127;
-        if(min < 0) min = 0;
-        return (byte)randInt(min, max);
+        if (max > 127) max = 127;
+        if (min < 0) min = 0;
+        return (byte) randInt(min, max);
     }
     
     public static short randShort(int min, int max) {
-        if(max > 32767) max = 32767;
-        if(min < -32768) min = -32768;
-        return (short)randInt(min, max);
+        if (max > 32767) max = 32767;
+        if (min < -32768) min = -32768;
+        return (short) randInt(min, max);
     }
     
     public static int randInt(int min, int max) {
-        return rand.nextInt(max-min+1) + min;
+        return RAND.nextInt(max-min+1) + min;
     }
     
     public static float randFloat(float min, float max) {
-        return rand.nextFloat()*(max-min) + min;
+        return RAND.nextFloat()*(max-min) + min;
     }
     
     public static double randDouble(double min, double max) {
-        return rand.nextDouble()*(max-min) + min;
+        return RAND.nextDouble()*(max-min) + min;
     }
     
     public static boolean randChance(int percent) {
@@ -56,20 +57,19 @@ public class RandomHelper {
     public static byte randChance(int[] percent, int max) {
         int chance = randInt(0, max);
         int curPercent = 0;
-        for(byte i = 0; i < percent.length; i++) {
+        for (byte i = 0; i < percent.length; i++) {
             curPercent += percent[i];
-            if(curPercent > chance) return i;
+            if (curPercent > chance)
+                return i;
         }
-        
         return -1;
     }
     
     public static String randNumberCode(int length) {
         char[] chars = "0123456789".toCharArray();
         StringBuffer sb = new StringBuffer(length);
-        Random random = new Random();
         for (int i = 0; i < length; i++) {
-            char c = chars[random.nextInt(chars.length)];
+            char c = chars[RAND.nextInt(chars.length)];
             sb.append(c);
         }
         return sb.toString();
@@ -78,9 +78,8 @@ public class RandomHelper {
     public static String randStringCode(int length) {
         char[] chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
         StringBuffer sb = new StringBuffer(length);
-        Random random = new Random();
         for (int i = 0; i < length; i++) {
-            char c = chars[random.nextInt(chars.length)];
+            char c = chars[RAND.nextInt(chars.length)];
             sb.append(c);
         }
         return sb.toString();

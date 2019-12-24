@@ -25,28 +25,21 @@ import javax.microedition.rms.RecordStoreException;
  * @author Thinh Pham
  */
 public class Setting {
+    
     private RecordStore rs;
     private final String name;
     
     public Setting(String fileName, String[] defaultRecord) {
         name = fileName;
-        
         try {
             rs = RecordStore.openRecordStore(name, true);
-//            //if the structure of records are not match with default,
-//            //delete it and create default one.
-//            if(rs.getNumRecords() != defaultRecord.length) {
-//                rs.closeRecordStore();
-//                RecordStore.deleteRecordStore(name);
-//                rs = RecordStore.openRecordStore(name, true);
-//                for(int i = 0; i < defaultRecord.length; i++) {
-//                    byte[] writer = defaultRecord[i].getBytes();
-//                    rs.addRecord(writer, 0, writer.length);
-//                }
-//            }
-            int numRecord = rs.getNumRecords();
-            if(numRecord < defaultRecord.length) {
-                for(int i = numRecord; i < defaultRecord.length; i++) {
+            // if the structure of records are not match with default,
+            // delete it and create default one.
+            if (rs.getNumRecords() != defaultRecord.length) {
+                rs.closeRecordStore();
+                RecordStore.deleteRecordStore(name);
+                rs = RecordStore.openRecordStore(name, true);
+                for (int i = 0; i < defaultRecord.length; i++) {
                     byte[] writer = defaultRecord[i].getBytes();
                     rs.addRecord(writer, 0, writer.length);
                 }
@@ -54,30 +47,27 @@ public class Setting {
         } catch (RecordStoreException ex) { }
     }
     
-    public boolean storeSetting(int key, String value) {
-        byte[] writer = value.getBytes();
+    public final boolean storeSetting(int key, String value) {
         try {
-            rs.setRecord(key+1, writer, 0, writer.length);
+            byte[] data = value.getBytes();
+            rs.setRecord(key+1, data, 0, data.length);
             return true;
         }
-        catch (InvalidRecordIDException ex) { 
-        }
-        catch (RecordStoreException ex) {
-        }
+        catch (InvalidRecordIDException ex) { }
+        catch (RecordStoreException ex) { }
         return false;
     }
     
-    public String getSetting(int key) {
+    public final String getSetting(int key) {
         try {
             return new String(rs.getRecord(key+1));
-        } catch (InvalidRecordIDException ex) {
-            return null;
-        } catch (RecordStoreException ex) {
-            return null;
         }
+        catch (InvalidRecordIDException ex) { }
+        catch (RecordStoreException ex) { }
+        return null;
     }
     
-    public boolean saveSetting() {
+    public final boolean saveSetting() {
         try {
             rs.closeRecordStore();
             rs = RecordStore.openRecordStore(name, false);
