@@ -21,7 +21,7 @@ import net.openitvn.game.GameScene;
 import net.openitvn.game.ImageHelper;
 import javax.microedition.io.ConnectionNotFoundException;
 //#if Nokia_240_320_Touch
-//# import com.openitvn.game.NetworkHelper;
+//# import net.openitvn.game.NetworkHelper;
 //# import javax.microedition.lcdui.Command;
 //# import javax.microedition.lcdui.CommandListener;
 //# import javax.microedition.lcdui.Displayable;

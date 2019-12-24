@@ -21,10 +21,10 @@ import net.openitvn.game.GameScene;
 import net.openitvn.game.ImageHelper;
 import javax.microedition.lcdui.Graphics;
 import javax.microedition.lcdui.Image;
-import net.openitvn.game.bound.Rectangle;
+import net.openitvn.game.bounding.Rectangle;
 import javax.microedition.io.ConnectionNotFoundException;
 //#if Nokia_240_320_Touch
-//# import com.openitvn.game.NetworkHelper;
+//# import net.openitvn.game.NetworkHelper;
 //# import javax.microedition.lcdui.Command;
 //# import javax.microedition.lcdui.CommandListener;
 //# import javax.microedition.lcdui.Displayable;

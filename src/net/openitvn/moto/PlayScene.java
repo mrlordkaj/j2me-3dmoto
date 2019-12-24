@@ -21,7 +21,7 @@ import net.openitvn.game.GameScene;
 import net.openitvn.game.ILeaderboardCaller;
 import net.openitvn.game.ImageHelper;
 import net.openitvn.game.Leaderboard;
-import net.openitvn.game.bound.Rectangle;
+import net.openitvn.game.bounding.Rectangle;
 import javax.microedition.lcdui.Command;
 import javax.microedition.lcdui.CommandListener;
 import javax.microedition.lcdui.Display;

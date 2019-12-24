@@ -22,7 +22,7 @@ import net.openitvn.game.ILeaderboardCaller;
 import net.openitvn.game.ImageHelper;
 import net.openitvn.game.Leaderboard;
 import net.openitvn.game.StringHelper;
-import net.openitvn.game.bound.Rectangle;
+import net.openitvn.game.bounding.Rectangle;
 import java.util.Vector;
 //#if Nokia_240_320_Touch
 //# import javax.microedition.lcdui.Command;

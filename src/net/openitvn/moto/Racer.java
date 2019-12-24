@@ -16,8 +16,8 @@
  */
 package net.openitvn.moto;
 
-import net.openitvn.game.bound.Point;
-import net.openitvn.game.bound.Rectangle;
+import net.openitvn.game.bounding.Point;
+import net.openitvn.game.bounding.Rectangle;
 import java.util.Vector;
 import javax.microedition.lcdui.Graphics;
 import javax.microedition.lcdui.Image;

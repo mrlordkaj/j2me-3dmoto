@@ -16,7 +16,7 @@
  */
 package net.openitvn.moto;
 
-import net.openitvn.game.bound.Point;
+import net.openitvn.game.bounding.Point;
 import javax.microedition.lcdui.Graphics;
 
 /**

@@ -29,8 +29,7 @@ public class Button {
     public int x, y;
     private final Image image;
     private final int width, height;
-    
-    public boolean active;
+    public boolean active = false;
     
     public Button(Image image, int x, int y, int width, int height) {
         this.x = x;
@@ -38,7 +37,6 @@ public class Button {
         this.width = width;
         this.height = height;
         this.image = image;
-        active = false;
     }
     
     public void paint(Graphics g) {
@@ -52,16 +50,16 @@ public class Button {
     
     public boolean gotClick(int x, int y) {
         boolean clicked = (active && x > this.x && x < this.x + this.width && y > this.y && y < this.y + this.height);
-        if(clicked) active = false;
+        if (clicked)
+            active = false;
         return clicked;
     }
     
     public boolean gotClick() {
-        if(active) {
+        if (active) {
             active = false;
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 }

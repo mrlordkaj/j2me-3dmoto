@@ -20,8 +20,8 @@ import net.openitvn.game.Button;
 import net.openitvn.game.GameScene;
 import net.openitvn.game.ImageHelper;
 import net.openitvn.game.StringHelper;
-import net.openitvn.game.bound.Point;
-import net.openitvn.game.bound.Rectangle;
+import net.openitvn.game.bounding.Point;
+import net.openitvn.game.bounding.Rectangle;
 //#if Nokia_240_320_Touch
 //# import javax.microedition.lcdui.Command;
 //# import javax.microedition.lcdui.CommandListener;

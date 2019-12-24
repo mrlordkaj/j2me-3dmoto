@@ -16,8 +16,8 @@
  */
 package net.openitvn.moto;
 
-import net.openitvn.game.bound.Point;
-import net.openitvn.game.bound.Rectangle;
+import net.openitvn.game.bounding.Point;
+import net.openitvn.game.bounding.Rectangle;
 import javax.microedition.m3g.Mesh;
 
 /**

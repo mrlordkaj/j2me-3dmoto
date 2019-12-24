@@ -16,7 +16,6 @@
  */
 package net.openitvn.game;
 
-import net.openitvn.game.math.MD5;
 import java.io.IOException;
 
 /**
