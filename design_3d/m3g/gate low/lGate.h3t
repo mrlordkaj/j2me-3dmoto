@@ -1,0 +1,1115 @@
+;V4FILE utf8
+
+( V4_FileInfo
+  ( versionNumber 1 1 )
+  ( hasExternalLinks true )
+  ( authoringField "Copyright (c) 2014 Openitvn Games" )
+  ( date "Fri Sep 19 15:28:32 2014" )
+); file information
+( External_Links
+  ( ExRef
+    ( name "ImageRef_0" )
+    ( URI "mountain.png" )
+  ); ExRef
+  ( ExRef
+    ( name "ImageRef_1" )
+    ( URI "wall.png" )
+  ); ExRef
+  ( ExRef
+    ( name "ImageRef_2" )
+    ( URI "hill.png" )
+  ); ExRef
+  ( ExRef
+    ( name "ImageRef_3" )
+    ( URI "desert.png" )
+  ); ExRef
+); External_Links
+;Sections start
+( Sections
+  ; Section#0
+  ( section
+    ( needCompress true )
+    ( KeyframeSequences
+    ); KeyframeSequences
+    ( AnimationTracks
+    ); AnimationTracks
+    ( Image2Ds
+      ( image2d
+        ( name "Image_0" )
+        ( userID 1 )
+        ( ExtImageRef "ImageRef_0" )
+        ( format 99 )
+      ); image2d
+      ( image2d
+        ( name "Image_1" )
+        ( userID 2 )
+        ( ExtImageRef "ImageRef_1" )
+        ( format 99 )
+      ); image2d
+      ( image2d
+        ( name "Image_2" )
+        ( userID 3 )
+        ( ExtImageRef "ImageRef_2" )
+        ( format 99 )
+      ); image2d
+      ( image2d
+        ( name "Image_3" )
+        ( userID 4 )
+        ( ExtImageRef "ImageRef_3" )
+        ( format 99 )
+      ); image2d
+    ); Image2Ds
+    ( CompositingModes
+      ( compositingMode
+        ( name "Compositing_Mode_0" )
+        ( userID 5 )
+        ( blending 68 )
+		( alphaWriteEnabled false )
+		( colorWriteEnabled false )
+      ); compositingMode
+    ); CompositingModes
+    ( Materials
+      ( material
+        ( name "Material_0" )
+        ( userID 6 )
+        ( diffuseColor     .8     .8     .8     1 )
+        ( ambientColor     .2     .2     .2 )
+      ); material
+      ( material
+        ( name "Material_1" )
+        ( userID 7 )
+        ( diffuseColor     .8     .8     .8     1 )
+        ( ambientColor     .2     .2     .2 )
+      ); material
+      ( material
+        ( name "Material_2" )
+        ( userID 8 )
+        ( diffuseColor     .8     .8     .8     1 )
+        ( ambientColor     .2     .2     .2 )
+      ); material
+      ( material
+        ( name "Material_3" )
+        ( userID 9 )
+        ( diffuseColor     .8     .8     .8     1 )
+        ( ambientColor     .2     .2     .2 )
+      ); material
+      ( material
+        ( name "Material_4" )
+        ( userID 10 )
+        ( diffuseColor     .0706     .0235     .0235     1 )
+        ( ambientColor     .0706     .0235     .0235 )
+      ); material
+    ); Materials
+    ( PolygonModes
+      ( polygonMode
+        ( name "Polygon_Mode_0" )
+        ( userID 11 )
+        ( perspectiveCorrectionEnabled true )
+      ); polygonMode
+    ); PolygonModes
+    ( Texture2Ds
+      ( texture2d
+        ( name "Texture_0" )
+        ( userID 12 )
+        ( textureImageRef "Image_0" )
+        ( wrappingS 241 )
+        ( wrappingT 241 )
+        ( levelFilter 208 )
+        ( imageFilter 210 )
+        ( blending 228 )
+      ); texture2d
+      ( texture2d
+        ( name "Texture_1" )
+        ( userID 13 )
+        ( textureImageRef "Image_1" )
+        ( wrappingS 241 )
+        ( wrappingT 241 )
+        ( levelFilter 208 )
+        ( imageFilter 210 )
+        ( blending 228 )
+      ); texture2d
+      ( texture2d
+        ( name "Texture_2" )
+        ( userID 14 )
+        ( textureImageRef "Image_2" )
+        ( wrappingS 241 )
+        ( wrappingT 241 )
+        ( levelFilter 208 )
+        ( imageFilter 210 )
+        ( blending 228 )
+      ); texture2d
+      ( texture2d
+        ( name "Texture_3" )
+        ( userID 15 )
+        ( textureImageRef "Image_3" )
+        ( wrappingS 241 )
+        ( wrappingT 241 )
+        ( levelFilter 208 )
+        ( imageFilter 210 )
+        ( blending 228 )
+      ); texture2d
+    ); Texture2Ds
+    ( Appearances
+      ( appearance
+        ( name "Appearance_0" )
+        ( userID 16 )
+        ( materialRef "Material_0" )
+        ( textures
+          ( textureRef "Texture_0" )
+        ); textures
+        ( compositingModeRef "Compositing_Mode_0" )
+        ( polygonModeRef "Polygon_Mode_0" )
+      ); appearance
+      ( appearance
+        ( name "Appearance_1" )
+        ( userID 17 )
+        ( materialRef "Material_1" )
+        ( textures
+          ( textureRef "Texture_1" )
+        ); textures
+        ( compositingModeRef "Compositing_Mode_0" )
+        ( polygonModeRef "Polygon_Mode_0" )
+      ); appearance
+      ( appearance
+        ( name "Appearance_2" )
+        ( userID 18 )
+        ( materialRef "Material_2" )
+        ( textures
+          ( textureRef "Texture_2" )
+        ); textures
+        ( compositingModeRef "Compositing_Mode_0" )
+        ( polygonModeRef "Polygon_Mode_0" )
+      ); appearance
+      ( appearance
+        ( name "Appearance_3" )
+        ( userID 19 )
+        ( materialRef "Material_3" )
+        ( textures
+          ( textureRef "Texture_3" )
+        ); textures
+        ( compositingModeRef "Compositing_Mode_0" )
+        ( polygonModeRef "Polygon_Mode_0" )
+      ); appearance
+      ( appearance
+        ( name "Appearance_4" )
+        ( userID 20 )
+        ( materialRef "Material_4" )
+        ( compositingModeRef "Compositing_Mode_0" )
+        ( polygonModeRef "Polygon_Mode_0" )
+      ); appearance
+    ); Appearances
+    ( VertexArrays
+      ( vertexArray
+        ( name "gate_mountain_VertexCoordArray" )
+        ( userID 21 )
+        ( scaleType 1 )
+        ( componentCount 3 )
+        ( vertexCount 96 )
+        ( components
+          ( f3    42.9459    46.3193     4.9996 )
+          ( f3    94.2491    31.6523     1.9258 )
+          ( f3    94.2491    -0    -6.5746 )
+          ( f3    94.2491    -0    -6.5746 )
+          ( f3    55.5773    -0     4.9995 )
+          ( f3    42.9459    46.3193     4.9996 )
+          ( f3  -107.2177    31.2068     8.1334 )
+          ( f3   -49.5119    39.1825     4.9995 )
+          ( f3   -55.7509    -.0001     4.9995 )
+          ( f3   -55.7509    -.0001     4.9995 )
+          ( f3  -104.3863    -0    -5.0133 )
+          ( f3  -107.2177    31.2068     8.1334 )
+          ( f3  -167.0658    38.7047    23.0251 )
+          ( f3  -107.2177    31.2068     8.1334 )
+          ( f3  -104.3863    -0    -5.0133 )
+          ( f3  -104.3863    -0    -5.0133 )
+          ( f3  -165.534    -0     3.7632 )
+          ( f3  -167.0658    38.7047    23.0251 )
+          ( f3  -205.7509    31.6523    14.5866 )
+          ( f3  -167.0658    38.7047    23.0251 )
+          ( f3  -165.534    -0     3.7632 )
+          ( f3  -165.534    -0     3.7632 )
+          ( f3  -205.7509    -0    -6.5746 )
+          ( f3  -205.7509    31.6523    14.5866 )
+          ( f3    54.5683    84.3246    17.0602 )
+          ( f3   112.9698    71.9658    13.7008 )
+          ( f3    94.2491    31.6523     1.9258 )
+          ( f3    94.2491    31.6523     1.9258 )
+          ( f3    42.9459    46.3193     4.9996 )
+          ( f3    54.5683    84.3246    17.0602 )
+          ( f3     2.889    79.4683    20.7721 )
+          ( f3    54.5683    84.3246    17.0602 )
+          ( f3    42.9459    46.3193     4.9996 )
+          ( f3    42.9459    46.3193     4.9996 )
+          ( f3    -0    58.4719     4.9996 )
+          ( f3     2.889    79.4683    20.7721 )
+          ( f3   -50.2707    79.9705    30.9806 )
+          ( f3     2.889    79.4683    20.7721 )
+          ( f3    -0    58.4719     4.9996 )
+          ( f3    -0    58.4719     4.9996 )
+          ( f3   -49.5119    39.1825     4.9995 )
+          ( f3   -50.2707    79.9705    30.9806 )
+          ( f3  -110.6855    91.4237    24.5476 )
+          ( f3   -50.2707    79.9705    30.9806 )
+          ( f3   -49.5119    39.1825     4.9995 )
+          ( f3   -49.5119    39.1825     4.9995 )
+          ( f3  -107.2177    31.2068     8.1334 )
+          ( f3  -110.6855    91.4237    24.5476 )
+          ( f3  -161.2612    77.486    42.3467 )
+          ( f3  -110.6855    91.4237    24.5476 )
+          ( f3  -107.2177    31.2068     8.1334 )
+          ( f3  -107.2177    31.2068     8.1334 )
+          ( f3  -167.0658    38.7047    23.0251 )
+          ( f3  -161.2612    77.486    42.3467 )
+          ( f3  -205.751    71.966    27.9636 )
+          ( f3  -161.2612    77.486    42.3467 )
+          ( f3  -167.0658    38.7047    23.0251 )
+          ( f3  -167.0658    38.7047    23.0251 )
+          ( f3  -205.7509    31.6523    14.5866 )
+          ( f3  -205.751    71.966    27.9636 )
+          ( f3    78.6   103.9335    52.6939 )
+          ( f3   123.9766    84.8989    41.2161 )
+          ( f3   112.9698    71.9658    13.7008 )
+          ( f3   112.9698    71.9658    13.7008 )
+          ( f3    54.5683    84.3246    17.0602 )
+          ( f3    78.6   103.9335    52.6939 )
+          ( f3    -1.7339    98.6065    71.5501 )
+          ( f3    78.6   103.9335    52.6939 )
+          ( f3    54.5683    84.3246    17.0602 )
+          ( f3    54.5683    84.3246    17.0602 )
+          ( f3     2.889    79.4683    20.7721 )
+          ( f3    -1.7339    98.6065    71.5501 )
+          ( f3   -54.8733   111.5466    73.3989 )
+          ( f3    -1.7339    98.6065    71.5501 )
+          ( f3     2.889    79.4683    20.7721 )
+          ( f3     2.889    79.4683    20.7721 )
+          ( f3   -50.2707    79.9705    30.9806 )
+          ( f3   -54.8733   111.5466    73.3989 )
+          ( f3  -107.496   102.0658    68.6459 )
+          ( f3   -54.8733   111.5466    73.3989 )
+          ( f3   -50.2707    79.9705    30.9806 )
+          ( f3   -50.2707    79.9705    30.9806 )
+          ( f3  -110.6855    91.4237    24.5476 )
+          ( f3  -107.496   102.0658    68.6459 )
+          ( f3  -163.8553   103.829    73.9708 )
+          ( f3  -107.496   102.0658    68.6459 )
+          ( f3  -110.6855    91.4237    24.5476 )
+          ( f3  -110.6855    91.4237    24.5476 )
+          ( f3  -161.2612    77.486    42.3467 )
+          ( f3  -163.8553   103.829    73.9708 )
+          ( f3  -205.751   101.3831    64.4588 )
+          ( f3  -163.8553   103.829    73.9708 )
+          ( f3  -161.2612    77.486    42.3467 )
+          ( f3  -161.2612    77.486    42.3467 )
+          ( f3  -205.751    71.966    27.9636 )
+          ( f3  -205.751   101.3831    64.4588 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_mountain_VertexNormalArray" )
+        ( userID 22 )
+        ( scaleType 2 )
+        ( componentCount 3 )
+        ( vertexCount 96 )
+        ( components
+          ( f3     .0163     .2593    -.9657 )
+          ( f3     .0163     .2593    -.9657 )
+          ( f3     .0163     .2593    -.9657 )
+          ( f3    -.2859    -.078    -.9551 )
+          ( f3    -.2859    -.078    -.9551 )
+          ( f3    -.2859    -.078    -.9551 )
+          ( f3    -.0554     .0088    -.9984 )
+          ( f3    -.0554     .0088    -.9984 )
+          ( f3    -.0554     .0088    -.9984 )
+          ( f3     .1852     .3957    -.8995 )
+          ( f3     .1852     .3957    -.8995 )
+          ( f3     .1852     .3957    -.8995 )
+          ( f3    -.1809     .3678    -.9121 )
+          ( f3    -.1809     .3678    -.9121 )
+          ( f3    -.1809     .3678    -.9121 )
+          ( f3    -.1277     .4378    -.8899 )
+          ( f3    -.1277     .4378    -.8899 )
+          ( f3    -.1277     .4378    -.8899 )
+          ( f3     .1123     .4463    -.8878 )
+          ( f3     .1123     .4463    -.8878 )
+          ( f3     .1123     .4463    -.8878 )
+          ( f3     .209     .5435    -.813 )
+          ( f3     .209     .5435    -.813 )
+          ( f3     .209     .5435    -.813 )
+          ( f3     .0037     .2788    -.9604 )
+          ( f3     .0037     .2788    -.9604 )
+          ( f3     .0037     .2788    -.9604 )
+          ( f3     .0271     .2948    -.9552 )
+          ( f3     .0271     .2948    -.9552 )
+          ( f3     .0271     .2948    -.9552 )
+          ( f3    -.0983     .3282    -.9395 )
+          ( f3    -.0983     .3282    -.9395 )
+          ( f3    -.0983     .3282    -.9395 )
+          ( f3     .1636     .578    -.7994 )
+          ( f3     .1636     .578    -.7994 )
+          ( f3     .1636     .578    -.7994 )
+          ( f3    -.1443     .6069    -.7815 )
+          ( f3    -.1443     .6069    -.7815 )
+          ( f3    -.1443     .6069    -.7815 )
+          ( f3    -.2039     .5233    -.8274 )
+          ( f3    -.2039     .5233    -.8274 )
+          ( f3    -.2039     .5233    -.8274 )
+          ( f3     .1885     .5301    -.8267 )
+          ( f3     .1885     .5301    -.8267 )
+          ( f3     .1885     .5301    -.8267 )
+          ( f3    -.0878     .2573    -.9623 )
+          ( f3    -.0878     .2573    -.9623 )
+          ( f3    -.0878     .2573    -.9623 )
+          ( f3    -.3778     .2232    -.8986 )
+          ( f3    -.3778     .2232    -.8986 )
+          ( f3    -.3778     .2232    -.8986 )
+          ( f3    -.1599     .4593    -.8738 )
+          ( f3    -.1599     .4593    -.8738 )
+          ( f3    -.1599     .4593    -.8738 )
+          ( f3     .2354     .405    -.8835 )
+          ( f3     .2354     .405    -.8835 )
+          ( f3     .2354     .405    -.8835 )
+          ( f3     .148     .3115    -.9387 )
+          ( f3     .148     .3115    -.9387 )
+          ( f3     .148     .3115    -.9387 )
+          ( f3     .2299     .8421    -.4878 )
+          ( f3     .2299     .8421    -.4878 )
+          ( f3     .2299     .8421    -.4878 )
+          ( f3     .1426     .8234    -.5493 )
+          ( f3     .1426     .8234    -.5493 )
+          ( f3     .1426     .8234    -.5493 )
+          ( f3    -.1529     .9057    -.3953 )
+          ( f3    -.1529     .9057    -.3953 )
+          ( f3    -.1529     .9057    -.3953 )
+          ( f3    -.1129     .9263    -.3594 )
+          ( f3    -.1129     .9263    -.3594 )
+          ( f3    -.1129     .9263    -.3594 )
+          ( f3     .2128     .9206    -.3276 )
+          ( f3     .2128     .9206    -.3276 )
+          ( f3     .2128     .9206    -.3276 )
+          ( f3    -.108     .7918    -.6011 )
+          ( f3    -.108     .7918    -.6011 )
+          ( f3    -.108     .7918    -.6011 )
+          ( f3    -.0888     .7943    -.6009 )
+          ( f3    -.0888     .7943    -.6009 )
+          ( f3    -.0888     .7943    -.6009 )
+          ( f3     .2056     .9478    -.2436 )
+          ( f3     .2056     .9478    -.2436 )
+          ( f3     .2056     .9478    -.2436 )
+          ( f3     .0082     .9719    -.2351 )
+          ( f3     .0082     .9719    -.2351 )
+          ( f3     .0082     .9719    -.2351 )
+          ( f3    -.4023     .6869    -.6052 )
+          ( f3    -.4023     .6869    -.6052 )
+          ( f3    -.4023     .6869    -.6052 )
+          ( f3     .0986     .7686    -.6321 )
+          ( f3     .0986     .7686    -.6321 )
+          ( f3     .0986     .7686    -.6321 )
+          ( f3     .1057     .7742    -.624 )
+          ( f3     .1057     .7742    -.624 )
+          ( f3     .1057     .7742    -.624 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_mountain_VertexTexCoordArray1" )
+        ( userID 23 )
+        ( scaleType 1 )
+        ( componentCount 2 )
+        ( vertexCount 96 )
+        ( components
+          ( f2     .246     .628 )
+          ( f2     .0095     .6294 )
+          ( f2     .0095     .9995 )
+          ( f2     .0095     .9995 )
+          ( f2     .2077     .9995 )
+          ( f2     .246     .628 )
+          ( f2     .701     .6295 )
+          ( f2     .5261     .6287 )
+          ( f2     .545     .9995 )
+          ( f2     .545     .9995 )
+          ( f2     .6924     .9995 )
+          ( f2     .701     .6295 )
+          ( f2     .8823     .6287 )
+          ( f2     .701     .6295 )
+          ( f2     .6924     .9995 )
+          ( f2     .6924     .9995 )
+          ( f2     .8777     .9995 )
+          ( f2     .8823     .6287 )
+          ( f2     .9995     .6294 )
+          ( f2     .8823     .6287 )
+          ( f2     .8777     .9995 )
+          ( f2     .8777     .9995 )
+          ( f2     .9995     .9995 )
+          ( f2     .9995     .6294 )
+          ( f2     .207     .3595 )
+          ( f2     .0093     .3596 )
+          ( f2     .0095     .6294 )
+          ( f2     .0095     .6294 )
+          ( f2     .246     .628 )
+          ( f2     .207     .3595 )
+          ( f2     .3334     .3595 )
+          ( f2     .207     .3595 )
+          ( f2     .246     .628 )
+          ( f2     .246     .628 )
+          ( f2     .3761     .6267 )
+          ( f2     .3334     .3595 )
+          ( f2     .5039     .3597 )
+          ( f2     .3334     .3595 )
+          ( f2     .3761     .6267 )
+          ( f2     .3761     .6267 )
+          ( f2     .5261     .6287 )
+          ( f2     .5039     .3597 )
+          ( f2     .7058     .3599 )
+          ( f2     .5039     .3597 )
+          ( f2     .5261     .6287 )
+          ( f2     .5261     .6287 )
+          ( f2     .701     .6295 )
+          ( f2     .7058     .3599 )
+          ( f2     .8685     .3596 )
+          ( f2     .7058     .3599 )
+          ( f2     .701     .6295 )
+          ( f2     .701     .6295 )
+          ( f2     .8823     .6287 )
+          ( f2     .8685     .3596 )
+          ( f2     .9995     .3595 )
+          ( f2     .8685     .3596 )
+          ( f2     .8823     .6287 )
+          ( f2     .8823     .6287 )
+          ( f2     .9995     .6294 )
+          ( f2     .9995     .3595 )
+          ( f2     .1418     .0222 )
+          ( f2     .0137     .0221 )
+          ( f2     .0093     .3596 )
+          ( f2     .0093     .3596 )
+          ( f2     .207     .3595 )
+          ( f2     .1418     .0222 )
+          ( f2     .3776     .0221 )
+          ( f2     .1418     .0222 )
+          ( f2     .207     .3595 )
+          ( f2     .207     .3595 )
+          ( f2     .3334     .3595 )
+          ( f2     .3776     .0221 )
+          ( f2     .5537     .0223 )
+          ( f2     .3776     .0221 )
+          ( f2     .3334     .3595 )
+          ( f2     .3334     .3595 )
+          ( f2     .5039     .3597 )
+          ( f2     .5537     .0223 )
+          ( f2     .7169     .0224 )
+          ( f2     .5537     .0223 )
+          ( f2     .5039     .3597 )
+          ( f2     .5039     .3597 )
+          ( f2     .7058     .3599 )
+          ( f2     .7169     .0224 )
+          ( f2     .8877     .0225 )
+          ( f2     .7169     .0224 )
+          ( f2     .7058     .3599 )
+          ( f2     .7058     .3599 )
+          ( f2     .8685     .3596 )
+          ( f2     .8877     .0225 )
+          ( f2     .9976     .0223 )
+          ( f2     .8877     .0225 )
+          ( f2     .8685     .3596 )
+          ( f2     .8685     .3596 )
+          ( f2     .9995     .3595 )
+          ( f2     .9976     .0223 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_bridge_VertexCoordArray" )
+        ( userID 24 )
+        ( scaleType 1 )
+        ( componentCount 3 )
+        ( vertexCount 10 )
+        ( components
+          ( f3  -160  -100     5 )
+          ( f3  -160    80     5 )
+          ( f3   -50    41.9998     5 )
+          ( f3     0    99.9998     5 )
+          ( f3     0    60.1822     5 )
+          ( f3    50    41.9998     5 )
+          ( f3   160    80     5 )
+          ( f3   160  -100     5 )
+          ( f3    50  -100     5 )
+          ( f3   -50  -100     5 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_bridge_VertexNormalArray" )
+        ( userID 25 )
+        ( scaleType 2 )
+        ( componentCount 3 )
+        ( vertexCount 10 )
+        ( components
+          ( f3     0     0    -1 )
+          ( f3     0     0    -1 )
+          ( f3     0     0    -1 )
+          ( f3     0     0    -1 )
+          ( f3     0     0    -1 )
+          ( f3     0     0    -1 )
+          ( f3     0     0    -1 )
+          ( f3     0     0    -1 )
+          ( f3     0     0    -1 )
+          ( f3     0     0    -1 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_bridge_VertexTexCoordArray1" )
+        ( userID 26 )
+        ( scaleType 1 )
+        ( componentCount 2 )
+        ( vertexCount 10 )
+        ( components
+          ( f2    -.5     1.5 )
+          ( f2    -.5    -.3 )
+          ( f2     .1875     .08 )
+          ( f2     .5    -.5 )
+          ( f2     .5    -.1018 )
+          ( f2     .8125     .08 )
+          ( f2     1.5    -.3 )
+          ( f2     1.5     1.5 )
+          ( f2     .8125     1.5 )
+          ( f2     .1875     1.5 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_sea_VertexCoordArray" )
+        ( userID 27 )
+        ( scaleType 1 )
+        ( componentCount 3 )
+        ( vertexCount 26 )
+        ( components
+          ( f3  -219.0185    35.2495    26.6545 )
+          ( f3  -209.0042    73.4156    36.9236 )
+          ( f3  -138.0646    43.4097    -.7438 )
+          ( f3  -125.9251    84.4375    18.4119 )
+          ( f3   -45.512    41.833     5.0001 )
+          ( f3   -52.9525    91.3121     5.0001 )
+          ( f3    -.0005    55.7561     5.0001 )
+          ( f3    -.0005    86.4975     5.0001 )
+          ( f3    45.5111    41.833     5.0001 )
+          ( f3    39.3566    81.0284     5.0001 )
+          ( f3    73.1927    32.3441    17.8764 )
+          ( f3    66.898    76.0331    11.618 )
+          ( f3    97.1044    27.7848    61.3349 )
+          ( f3    93.7549    64.2917    61.3349 )
+          ( f3  -203.9093   107.4449    56.2105 )
+          ( f3  -126.5195   111.7225    42.6628 )
+          ( f3   -57.1433   106.501    40.9953 )
+          ( f3    -4.1815   104.371    30.8887 )
+          ( f3    37.2189   104.2419    36.4853 )
+          ( f3    64.2647    99.0851    30.6731 )
+          ( f3    87.9081   -59.6165    61.3349 )
+          ( f3    66.3139    -3.1458    17.2263 )
+          ( f3    51.628     .0001     5.0001 )
+          ( f3   -51.629     .0001     5.0001 )
+          ( f3  -146.8676     .0001     .6288 )
+          ( f3  -228.398     .0002    40.3256 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_sea_VertexNormalArray" )
+        ( userID 28 )
+        ( scaleType 2 )
+        ( componentCount 3 )
+        ( vertexCount 26 )
+        ( components
+          ( f3    -.3863     .0339    -.9218 )
+          ( f3    -.285     .4293    -.857 )
+          ( f3    -.1244     .219    -.9678 )
+          ( f3    -.1545     .5057    -.8488 )
+          ( f3    -.0108     .04    -.9991 )
+          ( f3    -.035     .5331    -.8454 )
+          ( f3     0     0    -1 )
+          ( f3     .0348     .4891    -.8715 )
+          ( f3     .3458     .0303    -.9378 )
+          ( f3     .1762     .434    -.8835 )
+          ( f3     .6862    -.0304    -.7268 )
+          ( f3     .5502     .2989    -.7797 )
+          ( f3     .8776    -.0147    -.4791 )
+          ( f3     .8841     .1545    -.4411 )
+          ( f3    -.2304     .5443    -.8066 )
+          ( f3    -.1446     .7031    -.6962 )
+          ( f3     .0469     .9102    -.4114 )
+          ( f3     .0022     .8182    -.5749 )
+          ( f3     .0994     .7703    -.6299 )
+          ( f3     .3763     .6155    -.6925 )
+          ( f3     .8474    -.1099    -.5195 )
+          ( f3     .7153    -.0758    -.6947 )
+          ( f3     .6489     .0949    -.755 )
+          ( f3     .0575    -.0177    -.9982 )
+          ( f3    -.1818    -.0352    -.9827 )
+          ( f3    -.4264    -.2262    -.8758 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_sea_VertexTexCoordArray1" )
+        ( userID 29 )
+        ( scaleType 1 )
+        ( componentCount 2 )
+        ( vertexCount 26 )
+        ( components
+          ( f2     .9707     .7708 )
+          ( f2     .94     .3201 )
+          ( f2     .7223     .7233 )
+          ( f2     .6473     .3011 )
+          ( f2     .4382     .7325 )
+          ( f2     .4554     .2836 )
+          ( f2     .2985     .6513 )
+          ( f2     .291     .3249 )
+          ( f2     .1588     .7325 )
+          ( f2     .174     .3134 )
+          ( f2     .0739     .7878 )
+          ( f2     .0913     .3293 )
+          ( f2     .0005     .4899 )
+          ( f2     .0108     .3733 )
+          ( f2     .9243     .0254 )
+          ( f2     .6868     .0005 )
+          ( f2     .4739     .0309 )
+          ( f2     .3114     .0434 )
+          ( f2     .1843     .0441 )
+          ( f2     .1013     .0742 )
+          ( f2     .0287     .9995 )
+          ( f2     .095     .9947 )
+          ( f2     .1401     .9764 )
+          ( f2     .457     .9764 )
+          ( f2     .7493     .9764 )
+          ( f2     .9995     .9764 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_desert_VertexCoordArray" )
+        ( userID 30 )
+        ( scaleType 1 )
+        ( componentCount 3 )
+        ( vertexCount 27 )
+        ( components
+          ( f3  -216.9466    35.2498    26.6548 )
+          ( f3  -206.9322    73.4159    36.924 )
+          ( f3  -135.9928    43.41    -.7435 )
+          ( f3  -123.8533    84.4379    18.4122 )
+          ( f3   -43.4402    41.8333     5.0004 )
+          ( f3   -50.8807    91.3124     5.0004 )
+          ( f3    -0    55.7564     5.0004 )
+          ( f3    -0    86.4979     5.0004 )
+          ( f3    50.8806    91.3124     5.0004 )
+          ( f3    55.0714   106.5012    40.9956 )
+          ( f3   124.4475   111.7228    42.6632 )
+          ( f3  -201.8374   107.4452    56.2108 )
+          ( f3  -124.4477   111.7228    42.6631 )
+          ( f3   -55.0714   106.5013    40.9956 )
+          ( f3    -0   104.3713    30.889 )
+          ( f3   226.326     .0003    40.326 )
+          ( f3   144.7955     .0004     .6292 )
+          ( f3   216.9465    35.2497    26.6549 )
+          ( f3   135.9926    43.41    -.7435 )
+          ( f3   206.9323    73.4158    36.924 )
+          ( f3   123.8532    84.4378    18.4123 )
+          ( f3   201.8373   107.4451    56.2109 )
+          ( f3    49.557     .0004     5.0004 )
+          ( f3    43.4401    41.8333     5.0004 )
+          ( f3   -49.5571     .0004     5.0004 )
+          ( f3  -144.7957     .0005     .6291 )
+          ( f3  -226.3261     .0005    40.3259 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_desert_VertexNormalArray" )
+        ( userID 31 )
+        ( scaleType 2 )
+        ( componentCount 3 )
+        ( vertexCount 27 )
+        ( components
+          ( f3    -.3863     .0339    -.9218 )
+          ( f3    -.285     .4293    -.857 )
+          ( f3    -.1244     .219    -.9678 )
+          ( f3    -.1545     .5057    -.8488 )
+          ( f3    -.0109     .0401    -.9991 )
+          ( f3    -.0338     .5336    -.8451 )
+          ( f3     0     0    -1 )
+          ( f3     0     .4784    -.8781 )
+          ( f3     .0338     .5336    -.8451 )
+          ( f3    -.0473     .9102    -.4115 )
+          ( f3     .1446     .7031    -.6962 )
+          ( f3    -.2304     .5443    -.8066 )
+          ( f3    -.1446     .7031    -.6962 )
+          ( f3     .0473     .9102    -.4115 )
+          ( f3     0     .8229    -.5681 )
+          ( f3     .4264    -.2262    -.8758 )
+          ( f3     .1818    -.0352    -.9827 )
+          ( f3     .3863     .0339    -.9218 )
+          ( f3     .1244     .219    -.9678 )
+          ( f3     .285     .4293    -.857 )
+          ( f3     .1545     .5057    -.8488 )
+          ( f3     .2304     .5443    -.8066 )
+          ( f3    -.0575    -.0177    -.9982 )
+          ( f3     .0109     .0401    -.9991 )
+          ( f3     .0575    -.0177    -.9982 )
+          ( f3    -.1818    -.0352    -.9827 )
+          ( f3    -.4264    -.2262    -.8758 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_desert_VertexTexCoordArray1" )
+        ( userID 32 )
+        ( scaleType 1 )
+        ( componentCount 2 )
+        ( vertexCount 27 )
+        ( components
+          ( f2     .9788     .6843 )
+          ( f2     .9567     .343 )
+          ( f2     .8001     .6113 )
+          ( f2     .7733     .2445 )
+          ( f2     .5959     .6254 )
+          ( f2     .6123     .183 )
+          ( f2     .5     .5009 )
+          ( f2     .5     .2261 )
+          ( f2     .3877     .183 )
+          ( f2     .3785     .0472 )
+          ( f2     .2253     .0005 )
+          ( f2     .9455     .0388 )
+          ( f2     .7747     .0005 )
+          ( f2     .6215     .0472 )
+          ( f2     .5     .0662 )
+          ( f2     .0005     .9995 )
+          ( f2     .1804     .9995 )
+          ( f2     .0212     .6843 )
+          ( f2     .1999     .6113 )
+          ( f2     .0433     .343 )
+          ( f2     .2267     .2445 )
+          ( f2     .0545     .0387 )
+          ( f2     .3906     .9995 )
+          ( f2     .4041     .6254 )
+          ( f2     .6094     .9995 )
+          ( f2     .8196     .9995 )
+          ( f2     .9995     .9995 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_tunnel_VertexCoordArray" )
+        ( userID 33 )
+        ( scaleType 1 )
+        ( componentCount 3 )
+        ( vertexCount 28 )
+        ( components
+          ( f3    60     0     0 )
+          ( f3    45    -0     0 )
+          ( f3    60    30     0 )
+          ( f3    45    26.8377     0 )
+          ( f3    45    50     0 )
+          ( f3    39.5786    41.5971     0 )
+          ( f3     0    65     0 )
+          ( f3     0    55     0 )
+          ( f3   -39.5786    41.5971     0 )
+          ( f3     0    55     0 )
+          ( f3     0    55    10 )
+          ( f3   -39.5786    41.5971     0 )
+          ( f3   -39.5786    41.5971    10 )
+          ( f3   -45    26.8377     0 )
+          ( f3   -45    26.8377    10 )
+          ( f3   -45     0    10 )
+          ( f3   -45    50     0 )
+          ( f3   -45    26.8377     0 )
+          ( f3   -60    30     0 )
+          ( f3   -45    -0     0 )
+          ( f3   -60     0     0 )
+          ( f3    45     0    10 )
+          ( f3    45    26.8377    10 )
+          ( f3    45    26.8377     0 )
+          ( f3    39.5786    41.5971    10 )
+          ( f3    39.5786    41.5971     0 )
+          ( f3    45    -0     0 )
+          ( f3   -45    -0     0 )
+        ); components
+      ); vertexArray
+      ( vertexArray
+        ( name "gate_tunnel_VertexNormalArray" )
+        ( userID 34 )
+        ( scaleType 2 )
+        ( componentCount 3 )
+        ( vertexCount 28 )
+        ( components
+          ( f3     0    -0    -1 )
+          ( f3     0    -0    -1 )
+          ( f3     0    -0    -1 )
+          ( f3     0    -0    -1 )
+          ( f3     0    -0    -1 )
+          ( f3     0    -0    -1 )
+          ( f3     0    -0    -1 )
+          ( f3     0    -0    -1 )
+          ( f3     0    -0    -1 )
+          ( f3     0    -1     0 )
+          ( f3     0    -1     0 )
+          ( f3     .698    -.7161     0 )
+          ( f3     .698    -.7161     0 )
+          ( f3     .9846    -.1751     0 )
+          ( f3     .9846    -.1751     0 )
+          ( f3     1     0     0 )
+          ( f3     0    -0    -1 )
+          ( f3     0    -0    -1 )
+          ( f3     0    -0    -1 )
+          ( f3     0    -0    -1 )
+          ( f3     0    -0    -1 )
+          ( f3    -1     0     0 )
+          ( f3    -.9846    -.1751     0 )
+          ( f3    -.9846    -.1751     0 )
+          ( f3    -.698    -.7161     0 )
+          ( f3    -.698    -.7161     0 )
+          ( f3    -1     0     0 )
+          ( f3     1     0     0 )
+        ); components
+      ); vertexArray
+    ); VertexArrays
+    ( VertexBuffers
+      ( vertexBuffer
+        ( name "gate_mountain_VertexBuffer" )
+        ( userID 35 )
+        ( coordinatesRef "gate_mountain_VertexCoordArray" )
+        ( normalsRef "gate_mountain_VertexNormalArray" )
+        ( textureCoordRefs
+          ( textureCoordRef "gate_mountain_VertexTexCoordArray1" )
+        ); textureCoordRefs
+        ( colorsRef "NULL" )
+        ( defaultColor     .3333     .1098     .6941     1 )
+      ); vertexBuffer
+      ( vertexBuffer
+        ( name "gate_bridge_VertexBuffer" )
+        ( userID 36 )
+        ( coordinatesRef "gate_bridge_VertexCoordArray" )
+        ( normalsRef "gate_bridge_VertexNormalArray" )
+        ( textureCoordRefs
+          ( textureCoordRef "gate_bridge_VertexTexCoordArray1" )
+        ); textureCoordRefs
+        ( colorsRef "NULL" )
+        ( defaultColor     .5686     .1098     .6941     1 )
+      ); vertexBuffer
+      ( vertexBuffer
+        ( name "gate_sea_VertexBuffer" )
+        ( userID 37 )
+        ( coordinatesRef "gate_sea_VertexCoordArray" )
+        ( normalsRef "gate_sea_VertexNormalArray" )
+        ( textureCoordRefs
+          ( textureCoordRef "gate_sea_VertexTexCoordArray1" )
+        ); textureCoordRefs
+        ( colorsRef "NULL" )
+        ( defaultColor     .0235     .5294     .0235     1 )
+      ); vertexBuffer
+      ( vertexBuffer
+        ( name "gate_desert_VertexBuffer" )
+        ( userID 38 )
+        ( coordinatesRef "gate_desert_VertexCoordArray" )
+        ( normalsRef "gate_desert_VertexNormalArray" )
+        ( textureCoordRefs
+          ( textureCoordRef "gate_desert_VertexTexCoordArray1" )
+        ); textureCoordRefs
+        ( colorsRef "NULL" )
+        ( defaultColor     .0235     .5294     .0235     1 )
+      ); vertexBuffer
+      ( vertexBuffer
+        ( name "gate_tunnel_VertexBuffer" )
+        ( userID 39 )
+        ( coordinatesRef "gate_tunnel_VertexCoordArray" )
+        ( normalsRef "gate_tunnel_VertexNormalArray" )
+        ( colorsRef "NULL" )
+        ( defaultColor     .5294     .0235     .0235     1 )
+      ); vertexBuffer
+    ); VertexBuffers
+    ( TriangleStripArrays
+      ( triangleStripArray
+        ( name "gate_mountain_TriangleStripArray_0" )
+        ( userID 40 )
+        ( stripCount 32 )
+        ( stripLengths 
+          3 3 3 3 3 3 3 3 3 3 3 3 
+          3 3 3 3 3 3 3 3 3 3 3 3 
+          3 3 3 3 3 3 3 3 )
+        ( stripIndices
+          ( stripIndex 0 1 2 )
+          ( stripIndex 3 4 5 )
+          ( stripIndex 6 7 8 )
+          ( stripIndex 9 10 11 )
+          ( stripIndex 12 13 14 )
+          ( stripIndex 15 16 17 )
+          ( stripIndex 18 19 20 )
+          ( stripIndex 21 22 23 )
+          ( stripIndex 24 25 26 )
+          ( stripIndex 27 28 29 )
+          ( stripIndex 30 31 32 )
+          ( stripIndex 33 34 35 )
+          ( stripIndex 36 37 38 )
+          ( stripIndex 39 40 41 )
+          ( stripIndex 42 43 44 )
+          ( stripIndex 45 46 47 )
+          ( stripIndex 48 49 50 )
+          ( stripIndex 51 52 53 )
+          ( stripIndex 54 55 56 )
+          ( stripIndex 57 58 59 )
+          ( stripIndex 60 61 62 )
+          ( stripIndex 63 64 65 )
+          ( stripIndex 66 67 68 )
+          ( stripIndex 69 70 71 )
+          ( stripIndex 72 73 74 )
+          ( stripIndex 75 76 77 )
+          ( stripIndex 78 79 80 )
+          ( stripIndex 81 82 83 )
+          ( stripIndex 84 85 86 )
+          ( stripIndex 87 88 89 )
+          ( stripIndex 90 91 92 )
+          ( stripIndex 93 94 95 )
+        ); stripIndices
+      ); triangleStripArray
+      ( triangleStripArray
+        ( name "gate_bridge_TriangleStripArray_0" )
+        ( userID 41 )
+        ( stripCount 3 )
+        ( stripLengths 6 5 3 )
+        ( stripIndices
+          ( stripIndex 0 1 2 3 4 5 )
+          ( stripIndex 3 6 5 7 8 )
+          ( stripIndex 0 2 9 )
+        ); stripIndices
+      ); triangleStripArray
+      ( triangleStripArray
+        ( name "gate_sea_TriangleStripArray_0" )
+        ( userID 42 )
+        ( stripCount 4 )
+        ( stripLengths 14 13 6 6 )
+        ( stripIndices
+          ( stripIndex 
+            0 1 2 3 4 5 6 7 8 9 10 11 
+            12 13 )
+          ( stripIndex 
+            1 14 3 15 5 16 7 17 9 18 11 19 
+            13 )
+          ( stripIndex 12 20 10 21 8 22 )
+          ( stripIndex 4 23 2 24 0 25 )
+        ); stripIndices
+      ); triangleStripArray
+      ( triangleStripArray
+        ( name "gate_desert_TriangleStripArray_0" )
+        ( userID 43 )
+        ( stripCount 6 )
+        ( stripLengths 11 9 8 7 6 3 )
+        ( stripIndices
+          ( stripIndex 0 1 2 3 4 5 6 7 8 9 10 )
+          ( stripIndex 1 11 3 12 5 13 7 14 9 )
+          ( stripIndex 15 16 17 18 19 20 21 10 )
+          ( stripIndex 16 22 18 23 20 8 10 )
+          ( stripIndex 4 24 2 25 0 26 )
+          ( stripIndex 8 23 6 )
+        ); stripIndices
+      ); triangleStripArray
+      ( triangleStripArray
+        ( name "gate_tunnel_TriangleStripArray_0" )
+        ( userID 44 )
+        ( stripCount 6 )
+        ( stripLengths 9 7 7 7 3 3 )
+        ( stripIndices
+          ( stripIndex 0 1 2 3 4 5 6 7 8 )
+          ( stripIndex 9 10 11 12 13 14 15 )
+          ( stripIndex 6 8 16 17 18 19 20 )
+          ( stripIndex 21 22 23 24 25 10 9 )
+          ( stripIndex 23 26 21 )
+          ( stripIndex 15 27 13 )
+        ); stripIndices
+      ); triangleStripArray
+    ); TriangleStripArrays
+  ); end Section#0
+  
+  ( section
+    ( needCompress false )
+    ( World
+      ( name "Whole World" )
+      ( userID 45 )
+      ( numChildren 5 )
+      ( Children
+        ( Meshes
+          ( mesh
+            ( name "gate_mountain" )
+            ( userID 46 )
+            ( translation     0     .0001  -100 )
+            ( BBoxWidth   329.7276   111.5466    80.5453 )
+            ( BBoxCenter   -40.8872    55.7732    33.6981 )
+            ( vertexBufferRef "gate_mountain_VertexBuffer" )
+            ( submeshCount 1 )
+            ( subMeshes
+              ( subMesh
+                ( indexBufferRef "gate_mountain_TriangleStripArray_0" )
+                ( appearanceRef "Appearance_0" )
+              ); subMesh
+            ); subMeshes
+          ); mesh
+        ); Meshes
+        ( Meshes
+          ( mesh
+            ( name "gate_bridge" )
+            ( userID 47 )
+            ( translation     0     0  -200 )
+            ( BBoxWidth   320   199.9998     0 )
+            ( BBoxCenter     0    -.0001     5 )
+            ( vertexBufferRef "gate_bridge_VertexBuffer" )
+            ( submeshCount 1 )
+            ( subMeshes
+              ( subMesh
+                ( indexBufferRef "gate_bridge_TriangleStripArray_0" )
+                ( appearanceRef "Appearance_1" )
+              ); subMesh
+            ); subMeshes
+          ); mesh
+        ); Meshes
+        ( Meshes
+          ( mesh
+            ( name "gate_sea" )
+            ( userID 48 )
+            ( translation     0     0  -300 )
+            ( BBoxWidth   325.5024   171.339    62.0787 )
+            ( BBoxCenter   -65.6468    26.053    30.2956 )
+            ( vertexBufferRef "gate_sea_VertexBuffer" )
+            ( submeshCount 1 )
+            ( subMeshes
+              ( subMesh
+                ( indexBufferRef "gate_sea_TriangleStripArray_0" )
+                ( appearanceRef "Appearance_2" )
+              ); subMesh
+            ); subMeshes
+          ); mesh
+        ); Meshes
+        ( Meshes
+          ( mesh
+            ( name "gate_desert" )
+            ( userID 49 )
+            ( translation     0     0  -400 )
+            ( BBoxWidth   452.6521   111.7225    56.9544 )
+            ( BBoxCenter    -0    55.8616    27.7337 )
+            ( vertexBufferRef "gate_desert_VertexBuffer" )
+            ( submeshCount 1 )
+            ( subMeshes
+              ( subMesh
+                ( indexBufferRef "gate_desert_TriangleStripArray_0" )
+                ( appearanceRef "Appearance_3" )
+              ); subMesh
+            ); subMeshes
+          ); mesh
+        ); Meshes
+        ( Meshes
+          ( mesh
+            ( name "gate_tunnel" )
+            ( userID 50 )
+            ( translation     0     0  -500 )
+            ( BBoxWidth   120    65    10 )
+            ( BBoxCenter     0    32.5     5 )
+            ( vertexBufferRef "gate_tunnel_VertexBuffer" )
+            ( submeshCount 1 )
+            ( subMeshes
+              ( subMesh
+                ( indexBufferRef "gate_tunnel_TriangleStripArray_0" )
+                ( appearanceRef "Appearance_4" )
+              ); subMesh
+            ); subMeshes
+          ); mesh
+        ); Meshes
+      ); Children
+      ( activeCameraRef "CAMERA_DEFAULT" )
+    ); World
+  ); end Section
+  
+); end sections

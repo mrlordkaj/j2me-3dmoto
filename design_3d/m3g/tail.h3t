@@ -1,0 +1,182 @@
+;V4FILE utf8
+
+( V4_FileInfo
+  ( versionNumber 1 1 )
+  ( hasExternalLinks true )
+  ( authoringField "Copyright (c) 2014 Openitvn Games" )
+  ( date "Fri Oct 31 00:59:01 2014" )
+  ; Scene Description : Copyright (c) 2014 Openitvn Games
+); file information
+( External_Links
+  ( ExRef
+    ( name "ImageRef_0" )
+    ( URI "t0r.png" )
+  ); ExRef
+  ( ExRef
+    ( name "ImageRef_1" )
+    ( URI "t0l.png" )
+  ); ExRef
+  ( ExRef
+    ( name "ImageRef_2" )
+    ( URI "t1r.png" )
+  ); ExRef
+  ( ExRef
+    ( name "ImageRef_3" )
+    ( URI "t1l.png" )
+  ); ExRef
+  ( ExRef
+    ( name "ImageRef_4" )
+    ( URI "t2r.png" )
+  ); ExRef
+  ( ExRef
+    ( name "ImageRef_5" )
+    ( URI "t2l.png" )
+  ); ExRef
+  ( ExRef
+    ( name "ImageRef_6" )
+    ( URI "t3r.png" )
+  ); ExRef
+  ( ExRef
+    ( name "ImageRef_7" )
+    ( URI "t3l.png" )
+  ); ExRef
+); External_Links
+;Sections start
+( Sections
+  ; Section#0
+  ( section
+    ( needCompress true )
+    ( Image2Ds
+      ( image2d
+        ( name "Image_0" )
+        ( userID 1 )
+        ( ExtImageRef "ImageRef_0" )
+        ( format 100 )
+      ); image2d
+      ( image2d
+        ( name "Image_1" )
+        ( userID 2 )
+        ( ExtImageRef "ImageRef_1" )
+        ( format 100 )
+      ); image2d
+      ( image2d
+        ( name "Image_2" )
+        ( userID 3 )
+        ( ExtImageRef "ImageRef_2" )
+        ( format 100 )
+      ); image2d
+      ( image2d
+        ( name "Image_3" )
+        ( userID 4 )
+        ( ExtImageRef "ImageRef_3" )
+        ( format 100 )
+      ); image2d
+	  ( image2d
+        ( name "Image_4" )
+        ( userID 5 )
+        ( ExtImageRef "ImageRef_4" )
+        ( format 100 )
+      ); image2d
+	  ( image2d
+        ( name "Image_5" )
+        ( userID 6 )
+        ( ExtImageRef "ImageRef_5" )
+        ( format 100 )
+      ); image2d
+	  ( image2d
+        ( name "Image_6" )
+        ( userID 7 )
+        ( ExtImageRef "ImageRef_6" )
+        ( format 100 )
+      ); image2d
+	  ( image2d
+        ( name "Image_7" )
+        ( userID 8 )
+        ( ExtImageRef "ImageRef_7" )
+        ( format 100 )
+      ); image2d
+    ); Image2Ds
+    ( Texture2Ds
+      ( texture2d
+        ( name "Texture_0" )
+        ( userID 9 )
+        ( textureImageRef "Image_0" )
+        ( wrappingS 241 )
+        ( wrappingT 241 )
+        ( levelFilter 208 )
+        ( imageFilter 210 )
+        ( blending 226 )
+      ); texture2d
+      ( texture2d
+        ( name "Texture_1" )
+        ( userID 10 )
+        ( textureImageRef "Image_1" )
+        ( wrappingS 241 )
+        ( wrappingT 241 )
+        ( levelFilter 208 )
+        ( imageFilter 210 )
+        ( blending 226 )
+      ); texture2d
+      ( texture2d
+        ( name "Texture_2" )
+        ( userID 11 )
+        ( textureImageRef "Image_2" )
+        ( wrappingS 241 )
+        ( wrappingT 241 )
+        ( levelFilter 208 )
+        ( imageFilter 210 )
+        ( blending 226 )
+      ); texture2d
+      ( texture2d
+        ( name "Texture_3" )
+        ( userID 12 )
+        ( textureImageRef "Image_3" )
+        ( wrappingS 241 )
+        ( wrappingT 241 )
+        ( levelFilter 208 )
+        ( imageFilter 210 )
+        ( blending 226 )
+      ); texture2d
+	  ( texture2d
+        ( name "Texture_4" )
+        ( userID 13 )
+        ( textureImageRef "Image_4" )
+        ( wrappingS 241 )
+        ( wrappingT 241 )
+        ( levelFilter 208 )
+        ( imageFilter 210 )
+        ( blending 226 )
+      ); texture2d
+	  ( texture2d
+        ( name "Texture_5" )
+        ( userID 14 )
+        ( textureImageRef "Image_5" )
+        ( wrappingS 241 )
+        ( wrappingT 241 )
+        ( levelFilter 208 )
+        ( imageFilter 210 )
+        ( blending 226 )
+      ); texture2d
+	  ( texture2d
+        ( name "Texture_6" )
+        ( userID 15 )
+        ( textureImageRef "Image_6" )
+        ( wrappingS 241 )
+        ( wrappingT 241 )
+        ( levelFilter 208 )
+        ( imageFilter 210 )
+        ( blending 226 )
+      ); texture2d
+	  ( texture2d
+        ( name "Texture_7" )
+        ( userID 16 )
+        ( textureImageRef "Image_7" )
+        ( wrappingS 241 )
+        ( wrappingT 241 )
+        ( levelFilter 208 )
+        ( imageFilter 210 )
+        ( blending 226 )
+      ); texture2d
+    ); Texture2Ds
+  ); end Section#0
+); end sections

@@ -1,0 +1,30 @@
+﻿Noob Racer: Chạy 1000 mét trong 1 ván
+Advanced Racer: Chạy 3000 mét trong 1 ván
+Super Racer: Chạy 5000 mét trong 1 ván
+Master Racer: Chạy 10000 mét trong 1 ván
+Ultimate Racer: Chạy tổng cộng 1500000 mét
+The Poor: Thu 100 đồng trong 1 ván
+The Rich: Thu 200 đồng trong 1 ván
+Coin Collector: Thu 500 đồng trong 1 ván
+Money Lover: Thu 1000 đồng trong 1 ván
+Lucky Guy: Thu 2 kim cương trong 1 ván
+Too Much Gems: Thu 3 kim cương trong 1 ván
+Gems Love Me: Thu 4 kim cương trong 1 ván
+I'm Racer: Chơi ván thứ 10
+Road Lover: Chơi ván thứ 200
+Never Give Up: Chơi ván thứ 1000
+Road Is My Life: Chơi ván thứ 5000
+Desert Lizard: Mở khóa xe Desert Lizard
+Spirit Raider: Mở khóa xe Spirit Raider
+Demon Tomahawk: Mở khóa xe Demon Tomahawk
+Running In Fear: Sử dụng phanh 50 lần
+Like a Bird: Thực hiện 50 pha moto bay
+I'm Ghost: Hóa moto ma 50 lần
+The Destroyer: Húc đổ 100 chiếc ô tô
+Everyone Must Die: Chết lần đầu tiên
+Jesus Behind Me: Hồi sinh 10 lần
+Ultimate Thunder: Nâng cấp toàn diện xe Super Thunder
+Ultimate Lizard: Nâng cấp toàn diện xe Desert Lizard
+Ultimate Spirit: Nâng cấp toàn diện xe Spirit Raider
+Ultimate Tomahawk: Nâng cấp toàn diện xe Demon Tomahawk
+Powerful Racer: Nâng cấp toàn bộ power-up
